@@ -15,7 +15,7 @@ class Counter extends React.Component {
     incrementIfOdd() {
         // 偶数 & 1 = 0
         // 奇数 & 1 = 1
-        if (this.props.value % 2 === 0) {
+        if (!(this.props.value & 1)) {
             this.props.onIncrement()
         }
     }
